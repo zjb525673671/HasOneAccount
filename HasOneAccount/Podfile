@@ -1,0 +1,18 @@
+workspace ‘HasOneAccount.xcworkspace'
+use_frameworks!
+platform :ios, ‘9.0’
+
+def shared_pods
+    pod 'SnapKit', '~> 4.0.0' #swift版本的约束,相当于OC的masonry
+    pod 'Moya', '~> 11.0.2' #高级的网络请求三方库
+    pod 'SwiftyJSON', '~> 4.0.0' #swift网络请求json解析,数据model解析
+    pod 'NVActivityIndicatorView', '~> 4.2.0' #loading框
+    pod 'Kingfisher', '~> 4.7.0' #图片下载、缓存的框架,灵感取自于SDWebImage
+    pod 'MJRefresh', '~> 3.1.15.3' #下拉刷新
+    pod 'RAMAnimatedTabBarController', '~> 3.0.4' #tabbar动画
+end
+
+target 'HasOneAccount’ do
+    project 'HasOneAccount.xcodeproj'
+    shared_pods
+end

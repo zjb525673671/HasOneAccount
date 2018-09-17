@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AE68D0302C62265D621BCAD2 /* Pods_HasOneAccount.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC9B00C31243042861FDE56 /* Pods_HasOneAccount.framework */; };
+		F386FAD3214F9D8100F24E6A /* HomeMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386FAD2214F9D8100F24E6A /* HomeMainVC.swift */; };
 		F399592721421A20008FFD6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F399592621421A20008FFD6A /* Assets.xcassets */; };
 		F399592A21421A20008FFD6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F399592821421A20008FFD6A /* LaunchScreen.storyboard */; };
 		F3995937214221FA008FFD6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3995935214221FA008FFD6A /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 		154BC4C0958A79D010CA31E4 /* Pods-HasOneAccount.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HasOneAccount.release.xcconfig"; path = "Pods/Target Support Files/Pods-HasOneAccount/Pods-HasOneAccount.release.xcconfig"; sourceTree = "<group>"; };
 		5DC9B00C31243042861FDE56 /* Pods_HasOneAccount.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HasOneAccount.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6979AC46D9DF9B50481C7114 /* Pods-HasOneAccount.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HasOneAccount.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HasOneAccount/Pods-HasOneAccount.debug.xcconfig"; sourceTree = "<group>"; };
+		F386FAD2214F9D8100F24E6A /* HomeMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainVC.swift; sourceTree = "<group>"; };
 		F399591C21421A10008FFD6A /* HasOneAccount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HasOneAccount.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F399592621421A20008FFD6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F399592921421A20008FFD6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +57,52 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F386FACC214F9D3B00F24E6A /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		F386FACD214F9D3B00F24E6A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F386FACE214F9D3B00F24E6A /* Controller */,
+				F386FACF214F9D3B00F24E6A /* Presenter */,
+				F386FAD0214F9D3B00F24E6A /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F386FACE214F9D3B00F24E6A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F386FAD2214F9D8100F24E6A /* HomeMainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F386FACF214F9D3B00F24E6A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F386FAD0214F9D3B00F24E6A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F386FAD1214F9D3B00F24E6A /* Me */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
 		F399591321421A10008FFD6A = {
 			isa = PBXGroup;
 			children = (
@@ -76,10 +124,10 @@
 		F399591E21421A10008FFD6A /* HasOneAccount */ = {
 			isa = PBXGroup;
 			children = (
-				F39959392142221A008FFD6A /* Supporting File */,
-				F3995931214221FA008FFD6A /* Category */,
 				F3995932214221FA008FFD6A /* Function */,
 				F3995933214221FA008FFD6A /* Main */,
+				F3995931214221FA008FFD6A /* Category */,
+				F39959392142221A008FFD6A /* Supporting File */,
 			);
 			path = HasOneAccount;
 			sourceTree = "<group>";
@@ -94,6 +142,9 @@
 		F3995932214221FA008FFD6A /* Function */ = {
 			isa = PBXGroup;
 			children = (
+				F386FACD214F9D3B00F24E6A /* Home */,
+				F386FACC214F9D3B00F24E6A /* Activity */,
+				F386FAD1214F9D3B00F24E6A /* Me */,
 			);
 			path = Function;
 			sourceTree = "<group>";
@@ -269,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3995938214221FA008FFD6A /* ViewController.swift in Sources */,
+				F386FAD3214F9D8100F24E6A /* HomeMainVC.swift in Sources */,
 				F3995937214221FA008FFD6A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
